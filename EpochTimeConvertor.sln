@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34902.65
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EpochTimeConvertor", "EpochTimeConvertor.csproj", "{644CEE5A-D36C-4713-9E63-F567B1BE0E74}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{644CEE5A-D36C-4713-9E63-F567B1BE0E74}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{644CEE5A-D36C-4713-9E63-F567B1BE0E74}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{644CEE5A-D36C-4713-9E63-F567B1BE0E74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{644CEE5A-D36C-4713-9E63-F567B1BE0E74}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F37C9D2C-55EC-44F3-AA5A-86A18AEA37FF}
+	EndGlobalSection
+EndGlobal
