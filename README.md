@@ -17,13 +17,13 @@ Two date-time format fields (upper-left) are automaticaly saved to config file.
 💻 Requirements
 
 - Windows 10 or 11
-- [.NET Desktop Runtime](https://dotnet.microsoft.com/en-us/download/dotnet) (specify version used, e.g., .NET 6.0 or .NET 7.0)
+- [.NET Desktop Runtime](https://dotnet.microsoft.com/en-us/download/dotnet) (.NET 6.0 or .NET 7.0)
 
 
 🚀 Getting Started
 
 1. Go to the **[Releases](https://github.com/lemiges/EpochTimeConvertor/releases)** section
-2. Download the latest `.zip` or `.exe` file
+2. Download the latest `.zip` file
 3. Run `EpochTimeConvertor.exe` – done!
 
 🧑‍💻 For Developers
