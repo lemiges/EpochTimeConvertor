@@ -17,7 +17,7 @@ Two date-time format fields (upper-left) are automaticaly saved to config file.
 💻 Requirements
 
 - Windows 10 or 11
-- [.NET Desktop Runtime](https://dotnet.microsoft.com/en-us/download/dotnet) (.NET 6.0 or .NET 7.0)
+- [.NET 9.0 Desktop Runtime](https://dotnet.microsoft.com/en-us/download/dotnet)
 
 
 🚀 Getting Started
