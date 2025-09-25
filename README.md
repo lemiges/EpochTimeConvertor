@@ -9,6 +9,5 @@ Two date-time format fields (upper-left) are automaticaly saved to config file.
 It is built for .NET 9.0
 
 If like it you can donate here: <a href=paypal.me/PavelJindra>https://paypal.me/PavelJindra</a>
-<a href=[https://www.paypal.com/donate/?business=HUX2GFV7JJ52Y&no_recurring=1&currency_code=CZK]>here</a>
 
 ![pp_p2p_my_qrcode_1752088926360](https://github.com/user-attachments/assets/d7060487-f371-42cd-97b4-eceb534c91dd)
