@@ -77,7 +77,6 @@
             panelMonth.Name = "panelMonth";
             panelMonth.Size = new Size(480, 40);
             panelMonth.TabIndex = 100;
-            panelMonth.Enter += panelMonth_Enter;
             // 
             // textBoxFormat1
             // 
@@ -88,7 +87,7 @@
             textBoxFormat1.TabIndex = 101;
             textBoxFormat1.TabStop = false;
             textBoxFormat1.TextAlign = HorizontalAlignment.Right;
-            textBoxFormat1.KeyPress += textBoxesFormat_KeyPress;
+            textBoxFormat1.TextChanged += textBoxFormat_TextChanged;
             // 
             // textBoxEpoch
             // 
@@ -109,7 +108,7 @@
             textBoxFormat2.TabIndex = 102;
             textBoxFormat2.TabStop = false;
             textBoxFormat2.TextAlign = HorizontalAlignment.Right;
-            textBoxFormat2.KeyPress += textBoxesFormat_KeyPress;
+            textBoxFormat2.TextChanged += textBoxFormat_TextChanged;
             // 
             // labelDay
             // 
@@ -468,12 +467,12 @@
             // linkLabel1
             // 
             linkLabel1.AutoSize = true;
-            linkLabel1.Location = new Point(710, 570);
+            linkLabel1.Location = new Point(689, 570);
             linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new Size(273, 15);
+            linkLabel1.Size = new Size(299, 15);
             linkLabel1.TabIndex = 133;
             linkLabel1.TabStop = true;
-            linkLabel1.Text = "https://github.com/lemiges/EpochTimeConvertor";
+            linkLabel1.Text = "https://github.com/lemiges/Epoch-Time-Converter.git";
             // 
             // EpochTimeConvertor
             // 
@@ -523,7 +522,6 @@
             Margin = new Padding(0);
             MaximizeBox = false;
             Name = "EpochTimeConvertor";
-            StartPosition = FormStartPosition.CenterScreen;
             Text = "Epoch Time Converter";
             Load += EpochTimeConvertor_Load;
             ResumeLayout(false);
