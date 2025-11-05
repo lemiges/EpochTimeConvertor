@@ -88,7 +88,7 @@
             textBoxFormat1.TabIndex = 101;
             textBoxFormat1.TabStop = false;
             textBoxFormat1.TextAlign = HorizontalAlignment.Right;
-            textBoxFormat1.KeyPress += textBoxesFormat_KeyPress;
+            textBoxFormat1.KeyUp += textBoxesFormat_KeyUp;
             // 
             // textBoxEpoch
             // 
@@ -109,7 +109,7 @@
             textBoxFormat2.TabIndex = 102;
             textBoxFormat2.TabStop = false;
             textBoxFormat2.TextAlign = HorizontalAlignment.Right;
-            textBoxFormat2.KeyPress += textBoxesFormat_KeyPress;
+            textBoxFormat2.KeyUp += textBoxesFormat_KeyUp;
             // 
             // labelDay
             // 

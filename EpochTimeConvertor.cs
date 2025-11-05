@@ -538,7 +538,7 @@ namespace WinFormsApp1
                 RefreshControls("BigCalendar");
             }
         }
-        private void textBoxesFormat_KeyPress(object sender, KeyPressEventArgs e)
+        private void textBoxesFormat_KeyUp(object sender, KeyEventArgs e)
 
         {
             var currentConfig = new AppConfig
