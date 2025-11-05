@@ -1,3 +1,4 @@
+using Microsoft.VisualBasic;
 using System;
 using System.Globalization;
 using System.Runtime.InteropServices;
@@ -71,7 +72,7 @@ namespace WinFormsApp1
                 rb.Margin = new Padding(0);
                 rb.Padding = new Padding(0);
                 rb.Size = new Size(scaled30, scaled30);
-                rb.TabIndex = 400 + i; 
+                rb.TabIndex = 400 + i;
                 rb.TabStop = false;
                 rb.Text = i.ToString();
                 rb.TextAlign = ContentAlignment.MiddleCenter;
@@ -124,11 +125,12 @@ namespace WinFormsApp1
                 rb.CheckedChanged += radioButtonSecond_CheckedChanged;
                 panelSecond.Controls.Add(rb);
             }
-            
+
             //------------------------
 
 
         }
+
 
         private void EpochTimeConvertor_Load(object sender, EventArgs e)
         {
@@ -155,11 +157,11 @@ namespace WinFormsApp1
                 try
                 {
                     textBoxDirectEntry1.Text = dt.ToString(textBoxFormat1.Text);
-                } 
+                }
                 catch
                 {
                     textBoxDirectEntry1.Text = "wrong format";
-                    return ;
+                    return;
                 }
             }
 
@@ -260,6 +262,8 @@ namespace WinFormsApp1
                 BigCalendar.SelectionStart = dt;
             }
         }
+
+
 
         private void CurrentTimeTimer_Tick(object sender, EventArgs e)
         {
@@ -534,8 +538,8 @@ namespace WinFormsApp1
                 RefreshControls("BigCalendar");
             }
         }
+        private void textBoxesFormat_KeyPress(object sender, KeyPressEventArgs e)
 
-        private void textBoxFormat_TextChanged(object sender, EventArgs e)
         {
             var currentConfig = new AppConfig
             {
@@ -600,6 +604,11 @@ namespace WinFormsApp1
                 textBoxEpochMS.Focus();
                 textBoxEpochMS.Text = Clipboard.GetText();
             }
+        }
+
+        private void panelMonth_Enter(object sender, EventArgs e)
+        {
+            textBoxDirectEntry1.Focus();
         }
     }
 }
