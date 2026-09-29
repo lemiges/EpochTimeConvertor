@@ -9,7 +9,7 @@ A simple C# Windows Forms application for converting between Unix timestamps (ep
 - Clean and minimal UI
 - No installation required
  
-<img width="1438" height="1051" alt="image" src="https://github.com/user-attachments/assets/7c99aa0a-4c47-4cd8-bdd6-f91778920963" />
+<img width="1438" height="1044" alt="image" src="https://github.com/user-attachments/assets/55e7d439-12ec-418e-8c80-3930910a5b86" />
 
 User interface is as much simple as it can be. Calculations are done automaticaly when user change value in any control.
 Two date-time format fields (upper-left) are automaticaly saved to config file.
