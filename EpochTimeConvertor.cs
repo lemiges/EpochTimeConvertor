@@ -62,13 +62,13 @@ namespace WinFormsApp1
                 panelDay.Controls.Add(rb);
             }
 
-            for (int i = 1; i <= 24; i++)
+            for (int i = 0; i <= 23; i++)
             {
                 RadioButton radioButton = new();
                 RadioButton rb = radioButton;
                 rb.Appearance = Appearance.Button;
                 rb.FlatAppearance.CheckedBackColor = Color.LightGreen;
-                rb.Location = new Point((i - 1) * scaled30 - 1, -1);
+                rb.Location = new Point((i) * scaled30 - 1, -1);
                 rb.Margin = new Padding(0);
                 rb.Padding = new Padding(0);
                 rb.Size = new Size(scaled30, scaled30);
@@ -81,16 +81,16 @@ namespace WinFormsApp1
                 panelHour.Controls.Add(rb);
             }
 
-            for (int i = 1; i <= 60; i++)
+            for (int i = 0; i <= 59; i++)
             {
                 RadioButton radioButton = new();
                 RadioButton rb = radioButton;
                 rb.Appearance = Appearance.Button;
                 rb.FlatAppearance.CheckedBackColor = Color.LightGreen;
-                if (i <= 30)
-                    rb.Location = new Point((i - 1) * scaled30 - 1, -1);
+                if (i <= 29)
+                    rb.Location = new Point((i) * scaled30 - 1, -1);
                 else
-                    rb.Location = new Point((i - 31) * scaled30 - 1, scaled30 - 1);
+                    rb.Location = new Point((i - 30) * scaled30 - 1, scaled30 - 1);
                 rb.Margin = new Padding(0);
                 rb.Padding = new Padding(0);
                 rb.Size = new Size(scaled30, scaled30);
@@ -104,16 +104,16 @@ namespace WinFormsApp1
             }
 
 
-            for (int i = 1; i <= 60; i++)
+            for (int i = 0; i <= 59; i++)
             {
                 RadioButton radioButton = new();
                 RadioButton rb = radioButton;
                 rb.Appearance = Appearance.Button;
                 rb.FlatAppearance.CheckedBackColor = Color.LightGreen;
-                if (i <= 30)
-                    rb.Location = new Point((i - 1) * scaled30 - 1, -1);
+                if (i <= 29)
+                    rb.Location = new Point((i) * scaled30 - 1, -1);
                 else
-                    rb.Location = new Point((i - 31) * scaled30 - 1, scaled30 - 1);
+                    rb.Location = new Point((i - 30) * scaled30 - 1, scaled30 - 1);
                 rb.Margin = new Padding(0);
                 rb.Padding = new Padding(0);
                 rb.Size = new Size(scaled30, scaled30);
@@ -357,8 +357,8 @@ namespace WinFormsApp1
             {
                 try
                 {
-                    int iss = int.Parse(textBoxEpoch.Text);
-                    DateTime dt = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Local).AddSeconds(iss);
+                    long iss = long.Parse(textBoxEpoch.Text);
+                    DateTime dt = DateTimeOffset.FromUnixTimeMilliseconds(iss).LocalDateTime;
 
                     InternalDT.yy = dt.Year;
                     InternalDT.MM = dt.Month;
@@ -383,8 +383,8 @@ namespace WinFormsApp1
             {
                 try
                 {
-                    int iss = int.Parse(textBoxEpochMS.Text);
-                    DateTime dt = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Local).AddSeconds(iss);
+                    long iss = long.Parse(textBoxEpochMS.Text);
+                    DateTime dt = DateTimeOffset.FromUnixTimeMilliseconds(iss).LocalDateTime;
 
                     InternalDT.yy = dt.Year;
                     InternalDT.MM = dt.Month;
